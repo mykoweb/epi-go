@@ -36,11 +36,10 @@ func FindCycleStart(head *Node) *Node {
 	// latter happens, then there was no cycle.
 	for fastPtr != nil {
 		if slowPtr == fastPtr {
-			slowPtr = slowPtr.Next()
-
 			// Since slowPtr and fastPtr are pointing to the same node, we have found
 			// a cycle. Now keep advancing slowPtr until it meets fastPtr again in
 			// order to find the cycle length.
+			slowPtr = slowPtr.Next()
 			cycleLength++
 			for slowPtr != fastPtr {
 				slowPtr = slowPtr.Next()

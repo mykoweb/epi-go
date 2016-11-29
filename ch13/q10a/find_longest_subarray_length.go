@@ -4,7 +4,7 @@ type indexPair struct{ l, r int }
 
 // FindLongestSubarrayLength finds the length of the longest subarray within
 // arr that has distinct elements. For now we are only dealing with rune slices
-// but we will update to take slices of any type.
+// but we can update to take slices of any type.
 func FindLongestSubarrayLength(arr []rune) int {
 	if len(arr) < 1 {
 		return 0
