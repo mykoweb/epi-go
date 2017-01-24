@@ -9,6 +9,10 @@ import (
 	"strings"
 )
 
+// Given a file containing a list of star coordinates, find the k closest stars.
+//
+// The time complexity of this algorithm is O(n*log(k)) and the space complexity
+// is O(k).
 func FindKthClosest(filename string, k int) MaxHeap {
 	file, err := os.Open(filename)
 	if err != nil {

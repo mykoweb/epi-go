@@ -1,5 +1,7 @@
 package ch09q12a
 
+// This packages provides a Queue API with the standard queue operations of
+// Enqueue and Dequeue as well as a Max() operation.
 type Queue struct {
 	queue    []int
 	maxQueue []int

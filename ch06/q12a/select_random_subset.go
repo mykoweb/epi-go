@@ -5,6 +5,11 @@ import (
 	"time"
 )
 
+// SelectRandSubset takes an integer slice with unique elements and an integer,
+// k, where k < len(arr), and returns a subset of k elements selected randomly
+// from the integer slice.
+//
+// The time complexity is O(k).
 func SelectRandSubset(arr []int, k int) []int {
 	if k >= len(arr) {
 		return arr

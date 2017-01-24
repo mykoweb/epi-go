@@ -6,6 +6,9 @@ import (
 	"strings"
 )
 
+// ConvertBase takes a string represented in base b1 and converts it into a
+// string in base b2.
+//
 // The time complexity for this problem is as follows:
 //
 // Creating base10Num is O(n) where n is the length of strArr.

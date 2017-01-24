@@ -1,5 +1,7 @@
 package ch10q10q
 
+// RecreateBT reconstructs a binary tree from an in-order traversal sequence and
+// a pre-order traversal sequence.
 func RecreateBT(inOrder, preOrder []string, root *Node) {
 	if len(preOrder) < 1 {
 		return

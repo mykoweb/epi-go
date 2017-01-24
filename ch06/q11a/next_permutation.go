@@ -1,5 +1,8 @@
 package ch06q11a
 
+// NextPermutation takes a permutation provided as a slice, and returns the next
+// permutation. If the permutation provided is the last permutation, then return
+// the empty slice.
 func NextPermutation(input []int) []int {
 	result := make([]int, len(input))
 	copy(result, input)
